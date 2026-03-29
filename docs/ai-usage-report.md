@@ -3,26 +3,30 @@
 ## 1. Tools Used & Use Cases
 
 ### ChatGPT
+Used as a **supporting assistant** during development, not as a replacement for my own work.
+
 Used to:
-- Explain the task
-- Generate an initial HTML and CSS structure
-- Suggest responsive layout improvements
-- Help implement JavaScript features 
-- Assist in writing documentation
+- Suggest ideas for interactive features (such as project filtering)
+- Explain JavaScript concepts and logic
+- Assist in implementing form validation and user feedback
+- Recommend improvements for UI/UX and CSS transitions
+- Help refine documentation for Assignment 2
 
 ---
 
 ## 2. Benefits & Challenges
 
 ### Benefits
-- Accelerated development process
-- Provided structured starting template
-- Improved organization and clarity of documentation
+- Helped generate ideas for dynamic and interactive features
+- Improved understanding of JavaScript logic (filtering and validation)
+- Made debugging easier and faster
+- Enhanced the overall user experience of the website
 
 ### Challenges
-- Some suggestions required modification to meet assignment requirements
-- Code needed adjustments to maintain simplicity and readability
-- Ensured the design remained original and not overly complex
+- Some AI suggestions required modification to match assignment requirements
+- Needed to simplify and adapt code to fit the existing project structure
+- Ensured that the design remained original and not overly complex
+- Verified that all features were fully understood before implementation
 
 ---
 
@@ -30,10 +34,11 @@ Used to:
 
 Through using AI assistance, I learned:
 
-- How to structure a professional portfolio page
-- How responsive layouts work using CSS Grid and media queries
-- How to organize a clean project folder structure
-- How to refine and review AI-generated code critically
+- How to implement dynamic features such as project filtering
+- How to validate user input in forms using JavaScript
+- How to provide clear user feedback (error and success messages)
+- How to use CSS transitions and animations to improve UI
+- How to extend an existing project with new functionality
 
 ---
 
@@ -41,8 +46,9 @@ Through using AI assistance, I learned:
 
 To ensure academic integrity:
 
-- All AI-generated code was reviewed line-by-line.
-- The layout, styling, and content were modified and personalized.
-- Unnecessary code was removed.
-- The website was tested across different screen sizes.
-- All documentation reflects my understanding of the implementation.
+- AI was used only as a **guide and assistant**, not as the main developer
+- All AI-generated code was reviewed, understood, and modified
+- The final implementation reflects my own learning and decisions
+- Code was adjusted to fit the project requirements and structure
+- All features were tested manually to ensure correctness
+- Documentation was written based on my own understanding
