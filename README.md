@@ -23,6 +23,8 @@ Responsive design for multiple devices
 Interactive UI elements and animations
 
 This assignment builds on the previous foundation by introducing more advanced front-end functionality.
+
+
 ---
 
 New Features in Assignment 2
@@ -37,6 +39,8 @@ Animations & Transitions:
 Hover effects and smooth transitions improve the user interface.
 Improved User Interaction:
 Visual feedback is provided for user actions such as button clicks and form submission.
+
+
 ---
 
 
