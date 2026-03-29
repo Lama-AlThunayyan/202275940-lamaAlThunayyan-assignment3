@@ -2,11 +2,16 @@
 
 ## 1. Project Overview
 
-This project is a single-page portfolio website developed using HTML, CSS, and JavaScript.  
+This project is an enhanced single-page portfolio website developed using HTML, CSS, and JavaScript.  
 
-It presents the student's information and two desktop application projects:
+It builds upon Assignment 1 by adding **interactive features, dynamic content, and improved user experience**.
+
+The website presents the student's information and two projects:
 - Folder Visualizer
 - Weekly Schedule Distance Visualizer
+
+New functionality includes project filtering, form validation, and UI animations.
+
 ---
 
 ## 2. File Responsibilities
@@ -15,8 +20,8 @@ It presents the student's information and two desktop application projects:
 Contains:
 - Navigation bar
 - About section
-- Projects section
-- Contact section
+- Projects section with filtering buttons
+- Contact section with form validation elements
 - Footer
 
 ---
@@ -24,11 +29,13 @@ Contains:
 ### css/styles.css
 Responsible for:
 - Layout design
-- Color themes
+- Color themes (light/dark mode)
 - Typography
 - Card styling
 - Responsive behavior
-- Dark mode styling
+- Animation and transition effects
+- Filter button styling
+- Form validation styles (error/success states)
 
 ---
 
@@ -42,13 +49,21 @@ Implements:
 2. **Mobile Menu Toggle**
    - Opens/closes navigation menu on small screens
 
-3. **Contact Form Interaction**
-   - Prevents default form submission
-   - Displays confirmation message
-   - Resets form fields
+3. **Project Filtering (Dynamic Feature)**
+   - Filters projects based on selected category (All / App / Web)
+   - Dynamically shows or hides project cards
 
-4. **Dynamic Footer Year**
-   - Automatically updates copyright year
+4. **Contact Form Validation (Data Handling)**
+   - Validates user input (name, email, message)
+   - Displays error messages for invalid input
+   - Displays success message for valid submission
+
+5. **User Feedback System**
+   - Provides real-time feedback messages
+   - Highlights input fields (error/success states)
+
+6. **Dynamic Footer Year**
+   - Automatically updates the copyright year
 
 ---
 
@@ -57,19 +72,49 @@ Implements:
 - CSS Grid used for project cards layout
 - Grid switches from 2 columns (desktop) to 1 column (mobile)
 - Navigation converts to collapsible menu on smaller screens
+- Layout adapts for mobile, tablet, and desktop devices
 
 ---
 
-## 4. Performance Considerations
+## 4. Interactivity & Dynamic Features
+
+The following interactive features were added in Assignment 2:
+
+- Project filtering using JavaScript
+- Theme toggle using localStorage
+- Form validation and dynamic feedback messages
+- Smooth UI transitions and hover effects
+
+These features improve usability and create a more dynamic user experience.
+
+---
+
+## 5. Performance Considerations
 
 - No external frameworks used
-- Lightweight styling
-- No unnecessary JavaScript libraries
+- Lightweight CSS and JavaScript
+- Efficient DOM manipulation
+- Minimal re-rendering for filtering functionality
 
 ---
 
-## 5. Browser Compatibility
+## 6. Browser Compatibility
 
 Tested on:
 - Google Chrome
 - Microsoft Edge
+
+The website works consistently across modern browsers.
+
+---
+
+## 7. Summary of Improvements from Assignment 1
+
+Compared to Assignment 1, the following improvements were added:
+
+- Dynamic project filtering
+- Enhanced form validation with feedback
+- UI animations and transitions
+- Improved user interaction and usability
+
+These additions demonstrate progress in JavaScript usage and front-end development skills.
