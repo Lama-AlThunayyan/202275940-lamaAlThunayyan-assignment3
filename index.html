@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a class="logo" href="#top">MyPortfolio</a>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle menu">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Lama Al-Thunayyan</h1>
+      <p class="tagline">Aspiring Web Developer • Building clean, responsive websites</p>
+      <div class="hero-actions">
+        <a class="cta" href="#projects">View Projects</a>
+        <a class="cta ghost" href="#contact">Contact Me</a>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <h2>About Me</h2>
+
+      <div class="about-grid">
+        <img class="profile" src="assets/images/profile-icon-design-free-vector.jpg" alt="Profile photo" />
+
+        <div>
+          <p>
+            Hi! I'm <strong>Lama Al-Thunayyan</strong>, a student learning web development using HTML, CSS, and JavaScript.
+            I enjoy building simple, user-friendly interfaces and improving my skills through projects.
+          </p>
+          <p class="muted">
+            Interests: UI design, responsive layouts, and front-end fundamentals.
+          </p>
+
+          <ul class="chips" aria-label="Skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <h2>Projects</h2>
+
+      <div class="cards">
+        <article class="card">
+          <img src="assets/images/project1.jpg" alt="Project 1 preview" />
+          <h3>Project 1: Folder Visualizer</h3>
+          <p>
+            This application allows users to select any directory on their system. It scans all files and subfolders, calculates their sizes, and displays them visually using size-based bars.
+Blue bars represent folders and orange bars represent files, making it easy to compare storage distribution.
+          </p>
+          <div class="card-actions">
+            <a class="link" href="#" aria-label="View Project 1">View</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/project2.jpg" alt="Project 2 preview" />
+          <h3>Project 2: Weekly Schedule Distance Visualizer</h3>
+          <p>
+            This application allows users to enter their CRNs and select specific days of the week.
+The system displays the selected day's courses, number of courses, number of different buildings, and calculates the total walking distance between buildings and displays the path visually on a campus map.
+          </p>
+          <div class="card-actions">
+            <a class="link" href="#" aria-label="View Project 2">View</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <h2>Contact</h2>
+
+      <form class="form" id="contactForm">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="email@example.com" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </label>
+
+        <button type="submit">Send</button>
+        <p class="form-msg" id="formMsg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Lama Al Thunayyan</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
