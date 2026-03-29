@@ -252,3 +252,107 @@ button {
   .about-grid { grid-template-columns: 1fr; }
   .profile { width: 100%; height: 220px; }
 }
+
+
+/*  Assignment 2 additions */
+
+/* Filter buttons */
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 12px 0 18px;
+}
+
+.filter-btn {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: var(--card);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: var(--accent);
+  color: white;
+}
+
+/* Cards animation */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Buttons animation */
+button,
+.cta,
+.link,
+.nav-links a {
+  transition: all 0.3s ease;
+}
+
+button:hover,
+.cta:hover {
+  opacity: 0.92;
+  transform: translateY(-2px);
+}
+
+/* Empty state */
+.empty-state {
+  color: var(--muted);
+  margin: 8px 0 16px;
+  font-weight: 600;
+}
+
+/* Form validation styles */
+.error-text {
+  color: #dc2626;
+  font-size: 0.9rem;
+  min-height: 1.1em;
+}
+
+input.error,
+textarea.error {
+  border: 1px solid #dc2626;
+}
+
+input.success,
+textarea.success {
+  border: 1px solid #16a34a;
+}
+
+/* Success / error message animation */
+.form-msg {
+  min-height: 1.2em;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.form-msg.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .filter-buttons {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    width: fit-content;
+  }
+}
