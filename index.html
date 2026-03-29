@@ -63,8 +63,16 @@
     <section class="section container" id="projects">
       <h2>Projects</h2>
 
+      <div class="filter-buttons">
+  <button type="button" class="filter-btn active" data-filter="all">All</button>
+  <button type="button" class="filter-btn" data-filter="app">App</button>
+  <button type="button" class="filter-btn" data-filter="web">Web</button>
+</div>
+
+<p id="emptyState" class="empty-state" hidden>No projects found.</p>
+
       <div class="cards">
-        <article class="card">
+        <article class="card" data-category="app">
           <img src="assets/images/project1.jpg" alt="Project 1 preview" />
           <h3>Project 1: Folder Visualizer</h3>
           <p>
@@ -76,11 +84,11 @@ Blue bars represent folders and orange bars represent files, making it easy to c
           </div>
         </article>
 
-        <article class="card">
+        <article class="card" data-category="web">
           <img src="assets/images/project2.jpg" alt="Project 2 preview" />
           <h3>Project 2: Weekly Schedule Distance Visualizer</h3>
           <p>
-            This application allows users to enter their CRNs and select specific days of the week.
+            This website allows users to enter their CRNs and select specific days of the week.
 The system displays the selected day's courses, number of courses, number of different buildings, and calculates the total walking distance between buildings and displays the path visually on a campus map.
           </p>
           <div class="card-actions">
@@ -93,25 +101,28 @@ The system displays the selected day's courses, number of courses, number of dif
     <section class="section container" id="contact">
       <h2>Contact</h2>
 
-      <form class="form" id="contactForm">
-        <label>
-          Name
-          <input type="text" name="name" placeholder="Your name" required />
-        </label>
+      <form class="form" id="contactForm" novalidate>
+  <label for="name">
+    Name
+    <input type="text" id="name" name="name" placeholder="Your name" required />
+    <small class="error-text" id="nameError"></small>
+  </label>
 
-        <label>
-          Email
-          <input type="email" name="email" placeholder="email@example.com" required />
-        </label>
+  <label for="email">
+    Email
+    <input type="email" id="email" name="email" placeholder="email@example.com" required />
+    <small class="error-text" id="emailError"></small>
+  </label>
 
-        <label>
-          Message
-          <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
-        </label>
+  <label for="message">
+    Message
+    <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+    <small class="error-text" id="messageError"></small>
+  </label>
 
-        <button type="submit">Send</button>
-        <p class="form-msg" id="formMsg" aria-live="polite"></p>
-      </form>
+  <button type="submit">Send</button>
+  <p class="form-msg" id="formMsg" aria-live="polite"></p>
+</form>
     </section>
   </main>
 
