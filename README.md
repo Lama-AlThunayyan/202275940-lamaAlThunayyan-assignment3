@@ -30,7 +30,6 @@ This assignment builds on the previous foundation by introducing more advanced f
 New Features in Assignment 2
 
 The following features were added beyond Assignment 1:
-
 Project Filtering (Dynamic Content):
 Users can filter projects based on categories (All / App / Web).
 Form Validation (Data Handling & User Feedback):
