@@ -118,7 +118,7 @@ This ensures consistency across page reloads and improves user experience.
 
 The application fetches repositories using:
 
-https://api.github.com/users/{username}/repos  
+https://api.github.com/users/Lama-AlThunayyan/repos  
 
 Steps:
 
