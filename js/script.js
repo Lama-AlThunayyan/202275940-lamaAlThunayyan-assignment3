@@ -166,3 +166,118 @@ contactForm.addEventListener("submit", (e) => {
     formMsg.classList.add("show");
   }
 });
+
+
+// =========================
+// Assignment 3 Additions: Projects filter + sort + remembered state
+// =========================
+const sortProjects = document.getElementById("sortProjects");
+const projectsContainer = document.querySelector("#projects .cards");
+const projectCardsArray = Array.from(document.querySelectorAll("#projects .card"));
+
+let currentFilter = localStorage.getItem("projectFilter") || "all";
+let currentSort = localStorage.getItem("projectSort") || "default";
+
+function applyProjectControls() {
+  let visibleCards = [...projectCardsArray];
+
+  // Filter
+  visibleCards.forEach((card) => {
+    const matches = currentFilter === "all" || card.dataset.category === currentFilter;
+    card.hidden = !matches;
+  });
+
+  // Sort only visible cards
+  const filteredCards = projectCardsArray.filter((card) => !card.hidden);
+
+  if (currentSort === "az") {
+    filteredCards.sort((a, b) =>
+      a.dataset.title.localeCompare(b.dataset.title)
+    );
+  } else if (currentSort === "za") {
+    filteredCards.sort((a, b) =>
+      b.dataset.title.localeCompare(a.dataset.title)
+    );
+  }
+
+  filteredCards.forEach((card) => projectsContainer.appendChild(card));
+
+  // update active button
+  filterButtons.forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.filter === currentFilter);
+  });
+
+  sortProjects.value = currentSort;
+
+  localStorage.setItem("projectFilter", currentFilter);
+  localStorage.setItem("projectSort", currentSort);
+
+  emptyState.hidden = filteredCards.length !== 0;
+}
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    currentFilter = button.dataset.filter;
+    applyProjectControls();
+  });
+});
+
+sortProjects.addEventListener("change", () => {
+  currentSort = sortProjects.value;
+  applyProjectControls();
+});
+
+applyProjectControls();
+
+// =========================
+// GitHub API integration
+// =========================
+const repoContainer = document.getElementById("repoContainer");
+const repoStatus = document.getElementById("repoStatus");
+
+// My GitHub username
+const githubUsername = "Lama-AlThunayyan";
+
+async function loadGitHubRepos() {
+  try {
+    repoStatus.textContent = "Loading repositories...";
+
+    const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=updated`);
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch repositories.");
+    }
+
+    const repos = await response.json();
+
+    repoContainer.innerHTML = "";
+
+    if (repos.length === 0) {
+      repoStatus.textContent = "No repositories found.";
+      return;
+    }
+
+    const topRepos = repos.slice(0, 4);
+
+    topRepos.forEach((repo) => {
+      const card = document.createElement("article");
+      card.className = "repo-card";
+
+      card.innerHTML = `
+        <h3>${repo.name}</h3>
+        <p>${repo.description ? repo.description : "No description available."}</p>
+        <p class="muted">⭐ ${repo.stargazers_count} | 🍴 ${repo.forks_count}</p>
+        <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">View Repository</a>
+      `;
+
+      repoContainer.appendChild(card);
+    });
+
+    repoStatus.textContent = "";
+  } catch (error) {
+    repoStatus.textContent = "Unable to load GitHub repositories right now. Please try again later.";
+    console.error(error);
+  }
+}
+
+loadGitHubRepos();

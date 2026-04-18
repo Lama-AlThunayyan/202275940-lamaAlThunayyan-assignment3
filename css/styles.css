@@ -356,3 +356,45 @@ textarea.success {
     width: fit-content;
   }
 }
+
+.project-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 18px;
+}
+
+.sort-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+}
+
+select {
+  font: inherit;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.repo-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.repo-card h3 {
+  margin-top: 0;
+}
+
+.repo-card a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
