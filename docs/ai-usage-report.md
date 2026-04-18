@@ -3,52 +3,47 @@
 ## 1. Tools Used & Use Cases
 
 ### ChatGPT
-Used as a **supporting assistant** during development, not as a replacement for my own work.
+Used as a supporting assistant to:
 
-Used to:
-- Suggest ideas for interactive features (such as project filtering)
-- Explain JavaScript concepts and logic
-- Assist in implementing form validation and user feedback
-- Recommend improvements for UI/UX and CSS transitions
-- Help refine documentation for Assignment 2
+- Plan advanced features (API, filtering, sorting)
+- Explain JavaScript logic and debugging
+- Assist in implementing API integration
+- Improve UI/UX design
+- Help write documentation
 
 ---
 
 ## 2. Benefits & Challenges
 
 ### Benefits
-- Helped generate ideas for dynamic and interactive features
-- Improved understanding of JavaScript logic (filtering and validation)
-- Made debugging easier and faster
-- Enhanced the overall user experience of the website
+- Faster development process
+- Improved understanding of advanced concepts
+- Helped structure complex logic
+- Assisted in debugging and testing
 
 ### Challenges
-- Some AI suggestions required modification to match assignment requirements
-- Needed to simplify and adapt code to fit the existing project structure
-- Ensured that the design remained original and not overly complex
-- Verified that all features were fully understood before implementation
+- Some suggestions required simplification
+- Needed to adapt code to match assignment requirements
+- Ensured originality and clarity
 
 ---
 
 ## 3. Learning Outcomes
 
-Through using AI assistance, I learned:
-
-- How to implement dynamic features such as project filtering
-- How to validate user input in forms using JavaScript
-- How to provide clear user feedback (error and success messages)
-- How to use CSS transitions and animations to improve UI
-- How to extend an existing project with new functionality
+- How to use APIs with JavaScript
+- How to implement filtering and sorting together
+- How to manage application state using localStorage
+- How to improve user experience with feedback
+- How to structure a scalable web application
 
 ---
 
 ## 4. Responsible Use & Modifications
 
-To ensure academic integrity:
+- AI was used only as a guide
+- All code was reviewed and understood
+- Code was modified to fit the project
+- Features were tested manually
+- Final implementation reflects my own work
 
-- AI was used only as a **guide and assistant**, not as the main developer
-- All AI-generated code was reviewed, understood, and modified
-- The final implementation reflects my own learning and decisions
-- Code was adjusted to fit the project requirements and structure
-- All features were tested manually to ensure correctness
-- Documentation was written based on my own understanding
+I ensured that all AI-generated code aligns with course concepts and was not used without understanding.

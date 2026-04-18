@@ -118,3 +118,4 @@ Compared to Assignment 1, the following improvements were added:
 - Improved user interaction and usability
 
 These additions demonstrate progress in JavaScript usage and front-end development skills.
+
