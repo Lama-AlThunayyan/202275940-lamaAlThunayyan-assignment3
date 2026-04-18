@@ -44,16 +44,6 @@ These prompts were directly related to implementing the advanced functionality r
 
 ---
 
-## 3. Learning Outcomes
-
-- How to use APIs with JavaScript
-- How to implement filtering and sorting together
-- How to manage application state using localStorage
-- How to improve user experience with feedback
-- How to structure a scalable web application
-
----
-
 ## 4. Risks of Using AI
 
 Using AI tools in this assignment introduced several potential risks:
